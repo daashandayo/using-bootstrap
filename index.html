@@ -1,139 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>using-bootstrap</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <body>
-    <!-- NAVBAR -->
-    <header class="fixed-top container">
-      <div class="header-top d-flex justify-content-between">
-        <div class="header-date">
-          <div>Fri, Mar 15, 2019</div>
-        </div>
-        <div class="header-title">
-          <h2>Newsweek</h2>
-        </div>
-        <div class="header-cta">
-          <a href="#" class="btn btn-primary btn-sign">Sign in</a>
-          <a href="#" class="btn btn-primary btn-subscribe">Subscribe</a>
-        </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <title>using-bootstrap</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="fixed-top container">
+    <div class="header-top d-flex justify-content-between">
+      <div class="header-date">
+        <div>Fri, Mar 15, 2019</div>
       </div>
-      <div class="header-bottom">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <div class="header-title">
+        <h2>Newsweek</h2>
+      </div>
+      <div class="header-cta">
+        <a href="#" class="btn btn-primary btn-sign">Sign in</a>
+        <a href="#" class="btn btn-primary btn-subscribe">Subscribe</a>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto news-category-links col-lg-9">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  U.S <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  World <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Business <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Tech & Science <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Culture <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Sports <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Health <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Opinion <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    Ndelible <span class="sr-only">(current)</span>
-                </a>
-              </li>
-            </ul>
-            <form class="form-inline form-search col-lg-3">
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-search"
-                type="submit"
-              >
+        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto news-category-links col-lg-9">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                U.S <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                World <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Business <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Tech & Science <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Culture <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Sports <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Health <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Opinion <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Ndelible <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+          <form class="form-inline form-search col-lg-3">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-search" type="submit">
               <i class="fas fa-search"></i>
-              </button>
-            </form>
-          </div>
-        </nav>
-      </div>
-    </header>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Optional JavaScript -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <main class="container">
+    <div class="row">
+      <section class="col-lg-3 col-md-4 col-sm-12">
+        <h3>Featured stories</h3>
+        <div class="card">
+          <img src="https://source.unsplash.com/g29arbbvPjo" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum is simply</h5>
+            <p class="card-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled
+            </p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Lorem Ipsum is simply dummy</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/kiI9wQPFw8E" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum is simply</h5>
+            <p class="card-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled
+            </p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Lorem Ipsum is simply dummy</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://source.unsplash.com/8sOZJ8JF0S8" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum is simply</h5>
+            <p class="card-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled
+            </p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Lorem Ipsum is simply dummy</a>
+          </div>
+        </div>
+
+      </section>
+      <article class="col-lg-5 col-md-8 col-sm-12">
+        <h3>Top story</h3>
+        <div class="card">
+          <img src="https://source.unsplash.com/nyL-rzwP-Mk" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Lorem Ipsum is simply</h5>
+            <p class="card-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled
+            </p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Lorem Ipsum is simply dummy</a>
+          </div>
+        </div>
+
+        <section>
+          <h4>More stories</h4>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/Im7lZjxeLhg" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/Wj1D-qiOseE" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/OIYrmG5FNFg" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/jq0z9B2KN4A" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+      
+      <aside class="col-lg-4 col-md-12 col-sm-12">
+        <section>
+          <h3>Opinions</h3>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                  <p class="card-text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                  <p class="card-text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                  <p class="card-text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                  <p class="card-text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Latest news</h3>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="https://source.unsplash.com/nGLpimqkyk4" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem Ipsum is simply</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
