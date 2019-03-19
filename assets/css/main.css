@@ -94,26 +94,9 @@ body {
   font-size: 4rem;
 }
 
-.navbar {
-  /* padding-left: 0;
-  padding-right: 0; */
-}
-
 .header-bottom {
   background-color: #fff;
 }
-
-/* .news-category-links {
-  display: flex;
-}
-
-.news-category-links li{
-  border-right: 1px solid #e5e5e5;
-  text-align: center;
-}
-.news-category-links li:last-child {
-  border-right: none;
-} */
 
 @media screen and (max-width: 990px) {
   .header-top {
