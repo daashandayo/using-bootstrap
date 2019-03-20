@@ -102,8 +102,25 @@ main.container .row {
   background-color: #fff;
 }
 
+.title-none, .header-collaps-btns {
+  display: none;
+}
 @media screen and (max-width: 990px) {
+  .fixed-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .header-top {
     display: none !important;
   }
+
+  .title-none, .header-collaps-btns {
+    display: inline;
+  }
+}
+
+.nav-item  {
+  text-align: right;
 }
