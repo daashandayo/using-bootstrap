@@ -42,7 +42,26 @@ main.container .row {
 .card {
   border: none;
   border-radius: 0;
+}
+
+.card-link {
+  color: #000;
+  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+section h3, aside h3, article h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 990px) {
