@@ -19,15 +19,6 @@ body {
   margin-right: 0;
 }
 
-main.container .row {
-  /* padding: 1em 2em; */
-}
-
-.container .row {
-  /* margin-left: -15px;
-  margin-right: -15px; */
-}
-
 .my-image{
   position:relative;
   overflow:hidden;
@@ -44,25 +35,6 @@ main.container .row {
   border-radius: 0;
 }
 
-.card-link {
-  color: #000;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding-top:0.5rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-section h3, aside h3, article h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #9a9a9a;
-  text-transform: uppercase;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
 @media screen and (max-width: 990px) {
   body {
@@ -221,7 +193,75 @@ section h3, aside h3, article h3 {
  
 }
 
-/* FOOTER */
+
+/* 
+============================================
+  MAIN
+============================================
+*/
+
+.more-stories > div, .opinions > div, .latest-news > div, .most-read > div {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.more-stories > div:last-child, .opinions > div:last-child, .latest-news > div:last-child, .most-read > div:last-child {
+  border-bottom: none;
+}
+
+.slideshow, .us, .business, .world, .tech, .culture, .sports {
+  border-bottom: 1px solid #ddd;
+}
+
+.us .aside > div, .business .aside > div, .world .aside > div, .tech .aside > div, .culture .aside > div, .sports .aside > div {
+  padding-bottom: 1rem;  
+  border-bottom: 1px solid #ddd;
+}
+
+.us .aside > div:last-child, .business .aside > div:last-child, .world .aside > div:last-child, .tech .aside > div:last-child, .culture .aside > div:last-child, .sports .aside > div:last-child {
+  border-bottom: none;
+}
+
+/* .us .aside .card-body, .business .aside .card-body, .world .aside .card-body, .tech .aside .card-body, .culture .aside .card-body, .sports .aside .card-body, .opinions .card-body, .latest-news .card-body {
+  padding-top: 0;
+} */
+
+.most-read h3, .editor h3, .magazine h3, .slideshow h3 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.most-read > div {
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  color: #000;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+section h3, aside h3, article h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+/* 
+============================================
+  FOOTER
+============================================
+*/
 
 .footer-title {
   font-size: 3rem;
