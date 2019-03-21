@@ -5,13 +5,18 @@
 */
 
 body {
-  background: hsl(0,0,20%);
-  margin-top: 10em;
+  background: #eee;
+  margin-top: 7em;
+}
+
+main.container {
+  padding-top: 1.25rem;
 }
 
 .container {
   max-width: 1310px;
   padding: 0;
+  background: #fff;
 }
 
 .row {
@@ -38,7 +43,7 @@ body {
 
 @media screen and (max-width: 990px) {
   body {
-    margin-top: 5em;
+    margin-top: 3.5em;
   }
 }
 
@@ -122,6 +127,7 @@ body {
 
 .header-bottom {
   background-color: #fff;
+  border-bottom: 2px solid #ddd;
 }
 
 .navbar-nav {
@@ -222,9 +228,9 @@ body {
   border-bottom: none;
 }
 
-/* .us .aside .card-body, .business .aside .card-body, .world .aside .card-body, .tech .aside .card-body, .culture .aside .card-body, .sports .aside .card-body, .opinions .card-body, .latest-news .card-body {
+.us .aside .card-body, .business .aside .card-body, .world .aside .card-body, .tech .aside .card-body, .culture .aside .card-body, .sports .aside .card-body, .opinions .card-body, .latest-news .card-body, .subscribe .card-body, .most-read .card-body {
   padding-top: 0;
-} */
+} 
 
 .most-read h3, .editor h3, .magazine h3, .slideshow h3 {
   padding-bottom: 1rem;
@@ -254,6 +260,14 @@ section h3, aside h3, article h3 {
   text-transform: uppercase;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 575px) {
+
+.us .aside .card-body, .business .aside .card-body, .world .aside .card-body, .tech .aside .card-body, .culture .aside .card-body, .sports .aside .card-body, .opinions .card-body, .latest-news .card-body, .subscribe .card-body, .most-read .card-body {
+  padding-top: 1.25rem;
+} 
+
 }
 
 
