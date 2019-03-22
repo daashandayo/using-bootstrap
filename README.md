@@ -14,3 +14,5 @@ This project emphasizes the use of [Bootstrap](https://getbootstrap.com/) to bui
 
 * Darshan - [Github Profile](https://github.com/daashandayo)
 * Raphael - [Github Profile](https://github.com/oghenebrume50)
+
+Hosted via Github Pages on [https://daashandayo.github.io/using-bootstrap/](https://daashandayo.github.io/using-bootstrap/)
