@@ -1,0 +1,289 @@
+/* 
+=================================================
+  BODY
+=================================================
+*/
+
+body {
+  background: #eee;
+  margin-top: 7em;
+}
+
+main.container {
+  padding-top: 1.25rem;
+}
+
+.container {
+  max-width: 1310px;
+  padding: 0;
+  background: #fff;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.my-image{
+  position:relative;
+  overflow:hidden;
+  padding-bottom:100%;
+}
+
+.my-image img{
+  position: absolute;
+  max-width: 100%;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+}
+
+
+@media screen and (max-width: 990px) {
+  body {
+    margin-top: 3.5em;
+  }
+}
+
+/* 
+=================================================
+  BUTTON
+=================================================
+*/
+
+.btn-primary {
+  border-radius: 0;
+}
+
+
+.btn-sign {
+  background: #f72210;  
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-sign:hover {
+  color: #fff;
+  background: #f72210;
+}
+
+.btn-subscribe {
+  background-color: #fff;
+  color: #f72210;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-subscribe:hover {
+  background-color: #fff;
+  color: #f72210;
+}
+
+.btn-search {
+  border:none;
+  color: #000;
+}
+
+
+/* 
+============================================
+  HEADER
+============================================
+*/
+
+.page-header {
+  color: #fff;
+  position: fixed;
+  min-width: 350px;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 999;
+}
+
+.header-top {
+  background-color: #f72210;
+  z-index:2;
+  padding: 1rem;
+}
+
+.header-middle {
+  position: absolute;
+  top:0;
+  left: 46%;
+  z-index:2;
+}
+
+.header-middle a {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.header-middle a:hover {
+  text-decoration: none;
+}
+
+.header-bottom {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item {
+  flex-grow:1;
+  margin-left: auto;
+  order: 2;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+
+.b-none {
+  border: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(0,0,0,0.8);
+ }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,0.9);
+ }
+
+
+@media screen and (max-width: 990px) {
+  
+  .navbar {
+    background-color: #f72210;
+  }
+  
+  .header-top {
+    position: absolute;
+    right: 75px;
+    padding: 0.5rem;
+  }
+  
+  .header-middle {
+    top: 1rem;
+    left: initial;
+  }
+  
+  .header-middle a {
+    font-size: 1rem;
+  }
+  
+  .ht-1 {
+    display: none;
+  }
+  
+  .nav-item {
+    border-right: none;
+  }
+  
+  .nav-search {
+    order: 1;
+  }
+  
+  .nav-search input {
+    width: 80%;
+    margin-right: auto;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+  }
+ 
+}
+
+
+/* 
+============================================
+  MAIN
+============================================
+*/
+
+.more-stories > div, .opinions > div, .latest-news > div, .most-read > div {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.more-stories > div:last-child, .opinions > div:last-child, .latest-news > div:last-child, .most-read > div:last-child {
+  border-bottom: none;
+}
+
+.slideshow, .us, .business, .world, .tech, .culture, .sports {
+  border-bottom: 1px solid #ddd;
+}
+
+.us .aside > div, .business .aside > div, .world .aside > div, .tech .aside > div, .culture .aside > div, .sports .aside > div {
+  padding-bottom: 1rem;  
+  border-bottom: 1px solid #ddd;
+}
+
+.us .aside > div:last-child, .business .aside > div:last-child, .world .aside > div:last-child, .tech .aside > div:last-child, .culture .aside > div:last-child, .sports .aside > div:last-child {
+  border-bottom: none;
+}
+
+.us .aside .card-body, .business .aside .card-body, .world .aside .card-body, .tech .aside .card-body, .culture .aside .card-body, .sports .aside .card-body, .opinions .card-body, .latest-news .card-body, .subscribe .card-body, .most-read .card-body {
+  padding-top: 0;
+} 
+
+.most-read h3, .editor h3, .magazine h3, .slideshow h3 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.most-read > div {
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  color: #000;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+section h3, aside h3, article h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 575px) {
+
+.us .aside .card-body, .business .aside .card-body, .world .aside .card-body, .tech .aside .card-body, .culture .aside .card-body, .sports .aside .card-body, .opinions .card-body, .latest-news .card-body, .subscribe .card-body, .most-read .card-body {
+  padding-top: 1.25rem;
+} 
+
+}
+
+
+/* 
+============================================
+  FOOTER
+============================================
+*/
+
+.footer-title {
+  font-size: 3rem;
+  color: #f72210;
+}
+
+.footer-social {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
